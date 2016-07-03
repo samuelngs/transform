@@ -18,7 +18,7 @@ type object2 struct {
 func main() {
     sample := &object{Field1: 50, Field2: "99.41"}
 	modified := &object2{}
-	if err := Go(sample, modified); err != nil {
+	if err := transform.Go(sample, modified); err != nil {
         panic(err)
 	}
 }
